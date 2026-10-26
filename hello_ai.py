@@ -1,10 +1,10 @@
 from openai import OpenAI
-from config import API_KEY, BASE_URL, MODEL
+from config import API_KEY, BASE_URL, MODELS
 
 client = OpenAI(base_url=BASE_URL, api_key=API_KEY)
 
 response = client.chat.completions.create(
-    model=MODEL,
+    model=MODELS,
     messages=[
         {"role": "user", "content": "Say hello and tell me one fun fact about python."}
     ]
