@@ -1,10 +1,12 @@
 import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY: str | None  = os.getenv("GEMINAI_API_KEY")
-MODELS: str = os.getenv("MODELS")
-BASE_URL: str = os.getenv("BASE_URL", "https://openrouter.ai/api/v1")
+
+API_KEY: str | None = os.getenv("GEMINAI_API_KEY")
+BASE_URL: str = os.getenv("BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
+MODEL: str = os.getenv("MODEL", "gemini-3.5-flash-lite")
 
 if not API_KEY:
-    raise SystemExit("Error: OPENROUTER_API_KEY is missing. Add it to your .env file.")
+    raise SystemExit("Error: API_KEY is missing. Add it to your .env file.")
