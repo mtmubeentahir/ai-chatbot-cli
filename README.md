@@ -67,7 +67,7 @@ Bot: Your name is Ahmad.
      ```
    - Open `.env` and paste your key:
      ```
-     API_KEY=your-gemini-key-here
+     GEMINAI_API_KEY=your-gemini-key-here
      BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
      MODEL=gemini-3.5-flash-lite
      ```

@@ -46,7 +46,7 @@ while True:
     if text == "/stats":
         print(f"{len(chat.messages)} messages are in this chat")
         print("Token sent: ", ai.tokens_in)
-        print("Token reciived: ", ai.tokens_out)
+        print("Token received: ", ai.tokens_out)
         continue
     
     if text == "/model":

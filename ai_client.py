@@ -23,7 +23,7 @@ class AIClient:
         except openai.APIConnectionError:
             return "[Error] Could not connect. Check your internet connection."
         except openai.APIStatusError as e:
-            return f"[Error] The API returned an error ({e.status_code})."
+            return f"[Error] The API returned an error ({e.status_code}). {e.message}"
 
         if response.usage:
             self.tokens_in += response.usage.prompt_tokens
