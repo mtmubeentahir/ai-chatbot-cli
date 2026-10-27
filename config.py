@@ -9,4 +9,4 @@ BASE_URL: str = os.getenv("BASE_URL", "https://generativelanguage.googleapis.com
 MODEL: str = os.getenv("MODEL", "gemini-3.5-flash-lite")
 
 if not API_KEY:
-    raise SystemExit("Error: API_KEY is missing. Add it to your .env file.")
+    raise SystemExit("Error: GEMINAI_API_KEY is missing. Add it to your .env file.")
